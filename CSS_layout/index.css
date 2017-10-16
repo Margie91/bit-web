@@ -1,0 +1,35 @@
+div {
+    width: 960;
+    text-align: center;
+
+}
+
+h1 {
+    color: firebrick;
+    font-size: 50px;
+    text-align: center;
+}
+
+#cat1 {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 40px;
+}
+
+#cat2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#cat3 {
+    position: absolute;
+    bottom: 0px;
+}
+
+a {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
