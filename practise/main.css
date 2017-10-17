@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+*::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+* {
+    padding: 0;
+    margin: 0;
+    zoom: 1;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(23, 23, 54);
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    margin: 20px auto;
+}
+
+nav {
+    width: 100%;
+    line-height: 50px;
+}
+
+
+nav, nav ul {
+    box-shadow: 5px 5px 20px rgb(121, 120, 120);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    background-color: firebrick;
+}
+
+ul li {
+    list-style-type: none;
+}
+nav ul li {
+    float: left;
+}
+.navList li {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    width: 120px;
+    text-align: center;
+    border-right: 1px solid rgb(124, 17, 17);
+}
+
+.navList li:last-child {
+    border-right: none;
+}
+
+#about {
+    position: relative;
+}
+
+.dropdownAbout {
+    position: absolute;
+    display: none;
+}
+
+.dropdownAbout li {
+    width: 150px;
+    border-bottom: 1px solid rgb(124, 17, 17);
+}
+
+#about:hover .dropdownAbout {
+    display: block;
+}
+
+.dropdownAbout li:hover {
+    background-color: rgb(124, 17, 17);
+}
+
+nav ul li#about li.hasDeepList {
+    position: relative;
+}
+
+nav ul li#about li.hasDeepList ul.deepList {
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
