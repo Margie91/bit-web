@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #2d3e50;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1 {
+    width: 960px;
+    margin: 50px auto;
+    font-size: 40px;
+    /* color: #ffbe00; */
+    text-align: center;
+    color: #c1392b;
+}
+
+ul {
+    list-style: none;
+}
+
+#navigation {
+    width: 100%;
+    background: #c1392b;
+    color: #fff;
+    overflow: hidden;
+}
+
+#navigation>li {
+    float: right;
+    padding: 10px 30px 10px 0px;
+    cursor: pointer;
+}
+
+#header-image {
+    margin-top: 2px;
+    width: 100%;
+}
+
+#recent-blogs {
+    float: right;
+    max-width: 270px;
+    margin: 0 0 30px 30px;
+    padding: 20px 10px;
+    background: #ffbe00;
+}
+
+#recent-blogs>li {
+    border-bottom: 1px solid rgba(45, 62, 80, 0.5);
+    padding: 5px 0
+}
+
+p {
+    /* box-sizing: border-box; */
+    width: 300px;
+    padding: 10px;
+    float: left;
+}
+
+p.third {
+    clear: left;
+}
+
+footer {
+    background: #2d3e50;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer>p {
+    width: 960px;
+    margin: 0 auto;
+    float: none;
+}

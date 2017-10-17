@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+ 
+.box {
+    background-color: lightcyan;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 1.2em;
+    border: solid rgb(238, 136, 27) 2px;
+    box-sizing: border-box;
+    padding: 8%;
+    margin: 5% 0;
+}
+
+@media screen and (min-width:576px) {
+
+    img {
+        float: left;
+        width: 30%;
+        margin-right: 25px;
+        vertical-align: center;
+    }
+
+    article p {
+        text-align: left;
+    }
+    
+    .box {
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    img {
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+
+    .box {
+        float: left;
+        width: 32%;
+        margin-right: 2%;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+    .box:last-child {
+        margin-right: 0;
+    }
+    article p {
+        text-align: center;
+    }
+
+}
