@@ -36,7 +36,7 @@ header img {
 }
 
 button {
-    background-color: blue;
+    background-color: rgb(6, 6, 170);
     border: none;
     border-radius: 20px;
     color: white;
@@ -57,18 +57,20 @@ nav ul {
     font-size: 0.8em;
     list-style: none;
     padding-left: 0px;
-    background-color: rgb(130, 181, 223);
+    background-color: rgb(109, 161, 201);
+    box-shadow: 0 0 25px rgb(104, 104, 104);
 }
 
 h1 {
     font-family: sans-serif;
+    color: rgb(90, 90, 90);
 }
 
 span {
     color: orange;
-    border-left: solid 2.5px black;
-    border-top: solid 2.5px black;
-    border-bottom: solid 2.5px black;
+    border-left: solid 2.5px rgb(90, 90, 90);
+    border-top: solid 2.5px rgb(90, 90, 90);
+    border-bottom: solid 2.5px rgb(90, 90, 90);
     padding-left: 1%;
 }
 
@@ -80,6 +82,11 @@ nav ul li {
 
 nav ul li:hover {
     background-color: lightskyblue;
+    cursor: pointer;
+}
+
+.divider {
+    width: 10%;
 }
 
 section {
@@ -87,6 +94,7 @@ section {
 }
 
 section h2 {
+    margin-bottom: 50px;
     font-size: 1.7em;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -99,7 +107,7 @@ section h3 {
 }
 
 section p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-kerning: normal;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 160%;
@@ -112,8 +120,12 @@ section ul{
 
 section ul li {
     padding: 3% 0;
-    font-size: 0.7em;
-    list-style-image: 
+    padding-left: 4%;
+    font-size: 0.8em;
+    background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 3%;
 }
 
 section img {
@@ -126,8 +138,8 @@ section img {
     box-sizing: border-box;
     padding: 3% 3%;
     margin-bottom: 5%; 
+    box-shadow: 0 0 25px rgb(105, 105, 105);
 }
-
 
 .box img {
     float: left;
@@ -138,6 +150,12 @@ section img {
     padding: 5px;
 }
 
+.box div {
+    float: left;
+    margin-top: 44px;
+    margin-left: 20px;
+}
+
 .box p {
     clear: left;
     line-height: 200%;
@@ -146,7 +164,8 @@ section img {
 
 .box h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:  1em;
+    font-size:  1.1em;
+   
 }
 
 #contactUs {
@@ -156,31 +175,107 @@ section img {
 
 .contact p {
     margin: 0;
-    padding: 2%;
+    padding: 3%;
     color: white;
+    font-size: 0.9em;
 }
 
-.contact.green{
-    background-color: rgb(30, 180, 30);
+.contact.green {
+    background-color: rgb(145, 201, 57);
+}
+
+.contact.green img {
+    width: 4%;
+    vertical-align: middle;
 }
 
 .contact.pink {
-    background-color: rgb(238, 64, 90);
+    background-color: rgb(238, 59, 74);
+}
+
+.contact.pink img {
+    width: 4%;
+    margin: 20px 10px 50px;
 }
 
 .contact.blue {
-    background-color: rgb(35, 115, 235);
+    background-color: rgb(18, 96, 212);
+}
+
+.contact.blue p:last-child {
+    padding-bottom: 50px;
+}
+
+.contact.blue img {
+    width: 4%;
 }
 
 .contact.lightblue {
     background-color: rgb(118, 216, 247);
 }
 
-contact.lightblue img {
-    width: 200px;
+.contact.lightblue img {
+    margin: 5% 0;
+}
+
+.contact img {
+    width: 40%;
+    margin: 0;
 }
 
 iframe {
     width: 100%;
-    height: 400px;
+    height: 600px;
+}
+
+form {
+    width: 100%;
+}
+
+form input, form textarea {
+   display: block;
+   margin: 0 auto 20px auto;
+   padding: 10px;
+   width: 95%;
+}
+
+#submit {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    width: 100px;
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(19, 18, 18);
+    width: 100%;
+    height: 250px;
+}
+
+
+footer p {
+    color: white;
+    text-align: center;
+    clear: left;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    padding: : 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+footer ul li {
+    margin-top: 80px;
+    display: inline-block;
+    margin-right: 20px;
+    
 }
