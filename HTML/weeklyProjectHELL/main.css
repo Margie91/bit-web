@@ -1,5 +1,5 @@
-#container {
-    width: 100%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -128,6 +128,7 @@ nav ul li {
     nav ul li {
         display: inline-block;
         margin-right: 10px;
+        font-size: 15px;
         
     }
 }
@@ -150,15 +151,26 @@ section {
 
 
 section h2 {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-size: 1.7em;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.divider {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
 @media (min-width: 768px) {
     section h2 {
         font-size: 2.2em;
+    }
+
+    .divider {
+        width: 500px;
     }
 }
 
@@ -166,6 +178,7 @@ section h3 {
     color: lightskyblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    margin-top: 0px;
 }
 
 @media (min-width: 768px) {
@@ -358,9 +371,22 @@ iframe {
     height: 600px;
 }
 
+@media (min-width:768px) {
+    .contact {
+        float: left;
+        width: 48%;
+    }
+
+    .contact iframe {
+        clear: left;
+        width: 100%;
+    }
+}
+
 form {
     width: 100%;
 }
+
 
 form input, form textarea {
    display: block;
