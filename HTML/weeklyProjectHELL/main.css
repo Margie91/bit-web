@@ -44,6 +44,12 @@ header img {
     }
 }
 
+@media (min-width:992px) {
+    #naslov p {
+        font-size: 3em;
+    }
+}
+
 button {
     background-color: rgb(6, 6, 170);
     border: none;
@@ -53,11 +59,26 @@ button {
     width: 20%;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: blue
+}
+
 @media (min-width:768px) {
     button {
         padding: 1%;
         width: 15%;
         font-size: 1em;
+    }
+}
+
+@media (min-width:992px) {
+    #naslov p {
+        font-size: 3em;
+    }
+
+    button {
+        width: 10%;
     }
 }
 
@@ -133,11 +154,26 @@ nav ul li {
     }
 }
 
+
+
 nav ul li:hover {
     background-color: lightskyblue;
     cursor: pointer;
 }
 
+@media (min-width: 768px) {
+    nav ul li:hover {
+        background-color: transparent;
+        color: orange;
+    }
+}
+
+@media (min-width:992px) {
+    nav ul li:hover {
+        background-color: transparent;
+        color: orange;
+    }
+}
 
 section {
     margin: 20% 7% 10% 7%;
@@ -178,7 +214,7 @@ section h3 {
     color: lightskyblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -255,12 +291,46 @@ section img {
     }
 }
 
+@media (min-width: 992px) {
+    .whoweare div {
+        margin: 0px auto;
+    }
+
+    .whoweare .welcome {
+        float: left;
+        width: 30%;
+        box-sizing: border-box;
+        font-size: 0.9em;
+        margin-right: 5%;
+    }
+
+    .whoweare .welcome ul li {
+        font-size: 0.9em;
+        padding-right: 0px;
+    }
+
+    .whoweare .welcome:last-child {
+        clear: none;
+        float: left;
+        width: 30%;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    section .image {
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+    }
+}
+
 .box {
     background-color: rgb(81, 162, 228);
     box-sizing: border-box;
     padding: 3% 3%;
     margin-bottom: 5%; 
     box-shadow: 0 0 25px rgb(105, 105, 105);
+    color: white;
 }
 
 .box img {
@@ -287,6 +357,7 @@ section img {
 .box h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:  1.1em;
+    color: black;
    
 }
 
@@ -311,6 +382,36 @@ section img {
         content: "";
         display: block;
     }
+}
+
+@media (min-width: 992px) {
+   .whatpeoplesay .box {
+       float: left;
+       width: 30%;
+       margin-left: 0px;
+       font-size: 13px;
+       padding: 2% 2%;
+       margin-right: 2.5%;
+       color: white;
+   }
+
+   .whatpeoplesay .box h4 {
+       color: black;
+   }
+
+    .whatpeoplesay .box:first-child {
+        margin-left: 0px;
+    }
+
+   .whatpeoplesay .box:nth-child(3) {
+    float: left;
+    }
+
+    .whatpeoplesay .box:last-child {
+        clear: none;
+        float: left;
+    }
+
 }
 
 #contactUs {
@@ -407,6 +508,26 @@ iframe {
         width: 100%;
     }
 }
+
+@media (min-width: 992px) {
+    .contact {
+        float: left;
+        width: 25%;
+        height: 175px;
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .contact iframe {
+        clear: left;
+        width: 100%;
+    }
+
+    .contact p{
+        font-size: 18px;
+    }
+}
+
 
 form {
     width: 100%;
