@@ -1,3 +1,11 @@
+$white-text: rgb(168, 28, 28);
+$logo-color: rgb(212, 152, 21);
+$font: monospace;
+
+@import 'nav.scss';
+@import 'box_shadow.scss';
+
+
 #container {
     width: 100%;
 }
@@ -31,10 +39,9 @@ header img {
 
 #naslov p {
     font-size: 1.5em;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: $white-text;
+    font-family: $font;
 }
-
 @media (min-width:768px) {
 
     #naslov p {
@@ -48,7 +55,7 @@ button {
     background-color: rgb(6, 6, 170);
     border: none;
     border-radius: 20px;
-    color: white;
+    color: $white-text;
     padding: 1.5%;
     width: 20%;
 }
@@ -61,49 +68,17 @@ button {
     }
 }
 
-nav {
-    text-align: center;
-}
 
-nav h1 {
-    font-size: 2em; 
-}
+ 
 
-nav ul {
-    margin: 0 2%;
-    font-size: 0.8em;
-    list-style: none;
-    padding-left: 0px;
-    background-color: rgb(109, 161, 201);
-    box-shadow: 0 0 25px rgb(104, 104, 104);
-}
 
-@media (min-width: 768px) {
-    nav ul {
-        background-color: transparent;
-        box-shadow: none;
-        position: absolute;
-        top: 40px;
-        right: 0px;
-    }
-}
 
-h1 {
-    font-family: sans-serif;
-    color: rgb(90, 90, 90);
-}
 
-span {
-    color: orange;
-    border-left: solid 2.5px rgb(90, 90, 90);
-    border-top: solid 2.5px rgb(90, 90, 90);
-    border-bottom: solid 2.5px rgb(90, 90, 90);
-    padding-left: 1%;
-}
+
 
 @media (min-width: 768px) {
     h1 {
-        color: white;
+        color: $white-text;
         position: absolute;
         top: 20px;
         left: 20px;
@@ -111,18 +86,13 @@ span {
     
     h1 span {
         padding-left: 10px;
-        border-left: solid 2.5px white;
-        border-top: solid 2.5px white;
-        border-bottom: solid 2.5px white;
+        border-left: solid 2.5px $white-text;
+        border-top: solid 2.5px $white-text;
+        border-bottom: solid 2.5px $white-text;
     }
 
 }
 
-nav ul li {
-    padding: 2%;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 @media (min-width: 768px) {
     nav ul li {
@@ -130,11 +100,6 @@ nav ul li {
         margin-right: 10px;
         
     }
-}
-
-nav ul li:hover {
-    background-color: lightskyblue;
-    cursor: pointer;
 }
 
 
@@ -153,7 +118,7 @@ section h2 {
     margin-bottom: 50px;
     font-size: 1.7em;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: $font;
 }
 
 @media (min-width: 768px) {
@@ -164,7 +129,7 @@ section h2 {
 
 section h3 {
     color: lightskyblue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font;
     font-size: 1em;
 }
 
@@ -178,7 +143,7 @@ section h3 {
 section p {
     font-size: 0.8em;
     font-kerning: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font;
     line-height: 160%;
 }
 
@@ -241,7 +206,7 @@ section img {
     box-sizing: border-box;
     padding: 3% 3%;
     margin-bottom: 5%; 
-    box-shadow: 0 0 25px rgb(105, 105, 105);
+    @include box-shadow(red);
 }
 
 .box img {
@@ -249,7 +214,7 @@ section img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid $white-text;
     padding: 5px;
 }
 
@@ -262,11 +227,11 @@ section img {
 .box p {
     clear: left;
     line-height: 200%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font;
 }
 
 .box h4 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: $font;
     font-size:  1.1em;
    
 }
@@ -306,7 +271,7 @@ section img {
 .contact p {
     margin: 0;
     padding: 3%;
-    color: white;
+    color: $white-text;
     font-size: 0.9em;
 }
 
@@ -371,7 +336,7 @@ form input, form textarea {
 
 #submit {
     background-color: orange;
-    color: white;
+    color: $white-text;
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
@@ -387,7 +352,7 @@ footer {
 
 
 footer p {
-    color: white;
+    color: $white-text;
     text-align: center;
     clear: left;
     margin-top: 50px;
@@ -396,10 +361,10 @@ footer p {
 footer ul {
     list-style: none;
     text-align: center;
-    padding: : 0;
+    padding:  0;
     padding: 0;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: $white-text;
+    font-family: $font;
     
 }
 
