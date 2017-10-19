@@ -208,13 +208,13 @@ section ul{
 
 
 section ul li {
-    padding: 3% 0;
-    padding-left: 4%;
+    padding: 20px;
+    padding-left: 25px;
     font-size: 0.8em;
-    background-image: url("images/arrow.png");
-	background-repeat: no-repeat;
-	background-position: left center;
-	background-size: 3%;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 17px;
 }
 
 @media (min-width: 768px) {
@@ -247,6 +247,12 @@ section img {
         box-sizing: border-box;
 
     }
+
+    .whoweare article:last-child {
+        clear: both;
+        width: 100%;
+        margin-top: 50px;
+    }
 }
 
 .box {
@@ -259,8 +265,8 @@ section img {
 
 .box img {
     float: left;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: auto;
     border-radius: 50%;
     border: 3px solid white;
     padding: 5px;
@@ -289,6 +295,10 @@ section img {
     .box {
         float: left;
         width: 48%;
+    }
+
+    .whatpeoplesay div:last-child {
+        clear: both;
     }
 
     .whatpeoplesay .box:nth-child(3) {
@@ -353,18 +363,30 @@ section img {
     width: 4%;
 }
 
+.contact img {
+    width: 40%;
+    margin: 0;
+}
 .contact.lightblue {
     background-color: rgb(118, 216, 247);
+}
+@media (min-width: 768px) {
+    .contact.lightblue {
+        padding: 12.5px 0;
+    }
+    section .contact.lightblue img {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
 }
 
 .contact.lightblue img {
     margin: 5% 0;
 }
 
-.contact img {
-    width: 40%;
-    margin: 0;
-}
 
 iframe {
     width: 100%;
@@ -374,7 +396,10 @@ iframe {
 @media (min-width:768px) {
     .contact {
         float: left;
-        width: 48%;
+        width: 50%;
+        height: 175px;
+        padding: 0;
+        padding-top: 25px;
     }
 
     .contact iframe {
@@ -392,7 +417,8 @@ form input, form textarea {
    display: block;
    margin: 0 auto 20px auto;
    padding: 10px;
-   width: 95%;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 #submit {
@@ -403,6 +429,24 @@ form input, form textarea {
     padding: 5px 20px;
     width: 100px;
     margin: 0;
+}
+
+@media (min-width:768px) {
+    section form input {
+        width: 32%;
+        margin-right: 2%;
+        float: left;
+        box-sizing: border-box;
+    }
+    form input:nth-child(3) {
+        margin-right: 0;
+    }
+
+    #submit {
+        font-size: 20px;
+        padding: 10px;
+        width: 120px;
+    }
 }
 
 footer {
