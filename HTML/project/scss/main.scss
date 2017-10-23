@@ -15,18 +15,35 @@ body {
 .greenButton {
     background-color: #18bc9c;
 }
+
+
 .navbar-toggler-icon {
     filter: invert(100%);    
 }
 .navbar-light .navbar-toggler {
     color: white;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: white;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: white;
 }
+
+@media screen and (min-width:992px) {
+    #navbarSupportedContent {
+        margin-left: 700px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #menu {
+        background-color: transparent;
+        border-color: white;
+    }
+}
+    
 
 .background {
     @extend .greenButton;
@@ -42,6 +59,20 @@ body {
             font-size: 1.8em;
             font-weight: bold;
         }
+
+        @media screen and (min-width:768px) {
+            h1 {
+                font-size: 3em;
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            p{
+                font-size: 1.2em;
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
 }
 
 .portfolio {
@@ -56,7 +87,17 @@ body {
         text-align: center;
         font-weight: bold;
     }
+
 }
+    @media screen and (min-width:992px) {
+        .portfolio {
+            width: 70%;
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+    }
+
+
 
 .about {
     text-align: center;
@@ -81,10 +122,39 @@ body {
         color: #18bc9c;
         border-color: #18bc9c;
     }
+
+        @media screen and (min-width:768px) {
+            .container {
+                width: 70%;
+            }
+
+            h2{
+                font-size: 2em;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .container {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .divider {
+                width: 40%;
+            }
+        }
+
 }
 .container {
     .btn {
         margin-bottom: 50px;       
+    }
+
+    @media screen and (min-width:768px) {
+        .btn {
+            margin-top: 30px;
+        }
     }
 }
 button {
@@ -95,6 +165,23 @@ button {
 }
 
 .contact {
+
+    @media screen and (min-width:768px) {
+        .container {
+            width: 70%;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        .container {
+            width: 50%;
+        }
+    }
+
   h1 {
       color: black;
       font-weight: bold;
@@ -105,6 +192,12 @@ button {
         .divider {
             margin: 0 auto;
             display: block;
+        }
+
+        @media screen and (min-width:992px) {
+            .divider {
+                width: 40%;
+            }
         }
 
   form {
@@ -150,9 +243,39 @@ button {
         max-width: 50%;
         margin: 0 auto;
     }
+
+        @media screen and (min-width:768px){
+            .social {
+                width: 80%;
+                font-size: 1.5em;
+                padding: 10px;
+            }
+
+        }
+
+        @media screen and (min-width:992px) {
+            .social {
+                max-width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .container {
+                width: 70%;
+            }
+
+            .col-md-4 {
+                margin-bottom: 70px;
+            }
+        }
+
    .last {
         padding-top: 40px;
     }
+
+        
+
     small {
         color: rgb(173, 165, 165);
     }
@@ -174,9 +297,35 @@ button {
     filter: invert(100%);
 }
 
+@media screen and (min-width:768px) {
+    .divider {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .divider {
+        width: 20%;
+    }
+}
+
+
 .portfolio .divider {
     width: 50%;
     margin: 0 auto ;
     display: block;
     margin-bottom: 20px;
+}
+
+
+@media screen and (min-width:768px) {
+    .portfolio .divider {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .portfolio .divider {
+        width: 25%;
+    }
 }
