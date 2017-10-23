@@ -1,0 +1,14 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: white; }
+
+.black {
+  background-color: black; }
+
+.navbar-light .navbar-brand {
+  color: white; }
+
+.bg-light {
+  background-color: none !important; }
+
+/*# sourceMappingURL=main.css.map */
