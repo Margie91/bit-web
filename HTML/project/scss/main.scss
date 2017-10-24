@@ -31,11 +31,6 @@ body {
     color: white;
 }
 
-@media screen and (min-width:992px) {
-    #navbarSupportedContent {
-        margin-left: 700px;
-    }
-}
 
 @media screen and (min-width:768px) {
     #menu {
@@ -240,25 +235,36 @@ button {
         margin: 0;
     }
     .social {
-        max-width: 50%;
         margin: 0 auto;
+        i {
+            border-radius: 50%;
+            border: 1px solid white;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 
         @media screen and (min-width:768px){
             .social {
-                width: 80%;
                 font-size: 1.5em;
-                padding: 10px;
             }
 
         }
 
         @media screen and (min-width:992px) {
             .social {
-                max-width: 50%;
                 margin: 0 auto;
             }
-        }
+
+            .social .col-3 {
+        
+            }
+         }
 
         @media screen and (min-width:768px) {
             .container {

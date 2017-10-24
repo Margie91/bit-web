@@ -26,9 +26,6 @@ body {
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: white; }
 
-@media screen and (min-width: 992px) {
-  #navbarSupportedContent {
-    margin-left: 700px; } }
 @media screen and (min-width: 768px) {
   #menu {
     background-color: transparent;
@@ -154,16 +151,21 @@ button img {
   .footer p {
     margin: 0; }
   .footer .social {
-    max-width: 50%;
     margin: 0 auto; }
+    .footer .social i {
+      border-radius: 50%;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      margin-right: 5px; }
+      .footer .social i:last-child {
+        margin-right: 0; }
   @media screen and (min-width: 768px) {
     .footer .social {
-      width: 80%;
-      font-size: 1.5em;
-      padding: 10px; } }
+      font-size: 1.5em; } }
   @media screen and (min-width: 992px) {
     .footer .social {
-      max-width: 50%;
       margin: 0 auto; } }
   @media screen and (min-width: 768px) {
     .footer .container {
