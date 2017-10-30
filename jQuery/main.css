@@ -1,0 +1,16 @@
+.bottom_border {
+    border-bottom: 1px solid black;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.activeLi {
+    color: red;
+}
+
+.background {
+    background-color: blue;
+    color: white;
+}
