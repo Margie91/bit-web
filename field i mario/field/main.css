@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url('imgs/field.png') no-repeat center;
+    background-size: cover;
+}
+
+#player {
+    width: 10%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#stop_moving {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px 20px;
+    background: #c1392b;
+    color: white;
+    border: 1px solid #2d3e50;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
