@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM prop</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background: url('field.png') no-repeat center;
+            background-size: cover;
+        }
+
+        #player {
+            width: 10%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #stop-moving {
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            padding: 10px 20px;
+            background: #c1392b;
+            color: white;
+            border: 1px solid #2d3e50;
+            font-size: 18px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="player" src="player.png" alt="Player">
+
+    <button id="stop-moving" class="myButton">Stop Moving</button>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+    <script src="field_script.js"></script>
+</body>
+</html>
