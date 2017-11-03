@@ -1,0 +1,28 @@
+.navbar {
+    background-color: black;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.form-control {
+    float: right;
+}
+
+span img{
+    width: 30px;
+    filter: invert(100%);
+}
+
+.container {
+    width: 80%;
+        h1 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+        }
+}
