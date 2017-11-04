@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 .navbar {
-    background-color: black;
+    background-color: rgb(41, 41, 41);
 }
 
 .navbar-light .navbar-brand {
@@ -16,9 +20,8 @@ span img{
 }
 
 .container {
-    width: 80%;
         h1 {
-            font-size: 1.5em;
+            margin-bottom: 30px;
             margin-top: 30px;
             text-align: center;
         }
@@ -26,3 +29,65 @@ span img{
             width: 100%;
         }
 }
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgba(243, 140, 22, 0.9);
+}
+
+.showLink {
+    display: block;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+footer {
+    background-color: rgb(41, 41, 41);
+    height: 70px;
+    text-align: center;
+    color: white;
+
+        p {
+            padding-top: 20px;
+        }
+}
+
+.search {
+    position: relative;
+    z-index: 10;
+
+    & + ul {
+        z-index: 9;
+        position: absolute;
+        top: 43px;
+        list-style: none;
+        background-color: rgb(236, 233, 233);
+        width: 200px;
+        box-sizing: border-box;
+        padding-left: 0px;
+
+            li {
+                display: inline-block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 10px;
+                border-bottom: 1px solid rgb(187, 187, 187);
+                border-radius: 5px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    a:hover {
+                        color: gray;
+                    }
+            }
+    }
+}
+
+
