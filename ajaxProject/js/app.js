@@ -5,10 +5,11 @@ var request = $.ajax({
 });
 
 request.done(function (allShowInfo) {
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < 51; i++) {
 
         let showName = allShowInfo[i].name;
         let showIMG = allShowInfo[i].image.original;
+        let showID = allShowInfo[i].id;
 
         let articleDiv = $("<div style = 'margin-bottom:20px'>");
         articleDiv.addClass('col-sm-12 col-md-6 col-lg-4 col-xl-4');
@@ -18,7 +19,7 @@ request.done(function (allShowInfo) {
         showImage.css('display', 'inline-block')
 
         let showLink = $('<a class="showLink">' + showName + '</a>');
-        showLink.attr('data-show-id', (i + 1));
+        showLink.attr('data-show-id', showID);
         showLink.attr('href', '#');
 
 

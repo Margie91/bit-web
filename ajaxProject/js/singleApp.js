@@ -27,6 +27,9 @@ request.done(function (showResult) {
     let liCast = '';
 
     for (let i = 0; i < showResult._embedded.cast.length; i++) {
+        if(i == 20) {
+            break;
+        }
         liCast += `<li>` + showResult._embedded.cast[i].person.name + `</li>`;
     }
 
